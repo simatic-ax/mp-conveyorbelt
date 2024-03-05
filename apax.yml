@@ -3,7 +3,7 @@ name: "mp-conveyorbelt"
 version: 0.0.0-placeholder
 author: Siemens AG
 # Description will be displayed in the apax extension
-description: <add your description here, which will be shown in the apax extension>
+description: This package contains all of the mp-specialized conveyor belt data
 type: lib
 #URL to the repository
 repository:
@@ -20,6 +20,7 @@ targets:
 devDependencies:
   '@ax/sdk': 2311.0.1
   "@simatic-ax/snippetscollection": 1.0.0
+  "@simatic-ax/plcopen-snippets": 1.0.1
 # Registry information, where the package will be published
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'

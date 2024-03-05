@@ -1,0 +1,39 @@
+{
+    "Devices": [
+      {
+        "Name": "Device1",
+        "Modules": [
+          {
+            "Name": "PLC_1",
+            "TypeIdentifier": {
+              "OrderNumber": "6ES7 516-3AN01-0AB0",
+              "Version": "V2.9"
+            },
+            "AccessProtection": {
+              "AccessLevel": "NoAccess"
+            }
+          },
+          {
+            "Name": "DI_1",
+            "TypeIdentifier": {
+              "OrderNumber": "6ES7 521-1BL00-0AB0",
+              "Version": "V2.2"
+            },
+            "IoConfiguration": {
+              "InputAddress": "9.0"
+            }
+          },
+          {
+            "Name": "DQ_1",
+            "TypeIdentifier": {
+              "OrderNumber": "6ES7 522-1BL01-0AB0",
+              "Version": "V1.1"
+            },
+            "IoConfiguration": {
+              "OutputAddress": "32"
+            }
+          }
+        ]
+      }
+    ]
+  }

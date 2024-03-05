@@ -1,14 +1,15 @@
 {
-  "name": "@simatic-ax/mp-conveyorbelt",
+  "name": "mp-conveyorbelt",
   "version": "0.0.0-placeholder",
   "lockFileVersion": "2",
   "installStrategy": "strict",
   "root": {
-    "name": "@simatic-ax/mp-conveyorbelt",
+    "name": "mp-conveyorbelt",
     "version": "0.0.0-placeholder",
     "devDependencies": {
       "@ax/sdk": "2311.0.1",
-      "@simatic-ax/snippetscollection": "1.0.0"
+      "@simatic-ax/snippetscollection": "1.0.0",
+      "@simatic-ax/plcopen-snippets": "1.0.1"
     }
   },
   "packages": {
@@ -40,6 +41,13 @@
       "version": "1.0.0",
       "integrity": "sha512-8BNldIIGZuuLSiMjJxcBmHt7sL7kSlc0dss88BcrfnL/7iXPmHwhlnh4XobcVoOHXaz5f8cbMbXCUrffBIwecQ==",
       "resolved": "https://npm.pkg.github.com/download/@simatic-ax/snippetscollection/1.0.0/60302d7e0da15a914ce0126503398063a42e1917",
+      "dependencies": {}
+    },
+    "@simatic-ax/plcopen-snippets": {
+      "name": "@simatic-ax/plcopen-snippets",
+      "version": "1.0.1",
+      "integrity": "sha512-hMUWCPSAL1iFw+VraKwnk4PWy+3AQP5/LQiWZ6BCYMe9WcaNsF8+9wFx78ZtwUuAIXwvWsbNm2Ubqfj4u/QxyQ==",
+      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/plcopen-snippets/1.0.1/8b74c3c41001032750c555e85959e823f13658fb",
       "dependencies": {}
     },
     "@ax/axunitst": {

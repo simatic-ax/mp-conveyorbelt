@@ -1,6 +1,7 @@
 # @simatic-ax.mp-conveyorbelt
 
 ## Description
+
 A conveyor system is a common piece of mechanical handling equipment that moves materials from one location to another. Conveyors are especially useful in applications involving the transport of heavy or bulky materials. Conveyor systems allow quick and efficient transport for a wide variety of materials, which make them very popular in the material handling and packaging industries. They also have popular consumer applications, as they are often found in supermarkets and airports, constituting the final leg of item/ bag delivery to customers. Many kinds of conveying systems are available and are used according to the various needs of different industries. There are chain conveyors (floor and overhead) as well. Chain conveyors consist of enclosed tracks, I-Beam, towline, power & free, and hand pushed trolleys.
 
 ## Install this package

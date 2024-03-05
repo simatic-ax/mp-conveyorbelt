@@ -2,7 +2,7 @@
 
 ## Namespace
 ```iec-st
-Simatic.Ax.Library.Mp
+Simatic.Ax.Mp
 ```
 
 ## Public members

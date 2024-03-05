@@ -1,4 +1,4 @@
-NAMESPACE Simatic.Ax.Library.Mp
+NAMESPACE Simatic.Ax.Mp
     
 
 END_NAMESPACE

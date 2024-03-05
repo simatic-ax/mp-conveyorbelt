@@ -1,4 +1,4 @@
-NAMESPACE Simatic.Ax.Library.Mp
+NAMESPACE Simatic.Ax.Mp
     
     {axcode:docs-v0:@simatic-ax/mp-conveyorbelt:conveyorbelt-class.md}
     /// This class is for demonstration purpose only

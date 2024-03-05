@@ -1,5 +1,5 @@
 # General information
-name: "mp-conveyorbelt"
+name: "@simatic-ax/mp-conveyorbelt"
 version: 0.0.0-placeholder
 author: Siemens AG
 # Description will be displayed in the apax extension
@@ -16,12 +16,14 @@ variables:
 targets:
   - '1500'
   - 'llvm'
+
 # Dependencies
 devDependencies:
   '@ax/sdk': 2311.0.1
   "@simatic-ax/snippetscollection": 1.0.0
   "@simatic-ax/plcopen-snippets": 1.0.1
 # Registry information, where the package will be published
+
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
 # Files, which will be shipped with the library

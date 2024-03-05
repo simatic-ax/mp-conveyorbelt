@@ -30,7 +30,7 @@ registries:
 files:
   - 'README.md'
   - 'LICENSE.md'
-  - 'doc'
+  - 'docs'
   - 'src'
   - 'snippets'
 installStrategy: strict

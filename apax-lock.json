@@ -1,11 +1,14 @@
 {
-  "name": "mp-conveyorbelt",
+  "name": "@simatic-ax/mp-conveyorbelt",
   "version": "0.0.0-placeholder",
   "lockFileVersion": "2",
   "installStrategy": "strict",
   "root": {
-    "name": "mp-conveyorbelt",
+    "name": "@simatic-ax/mp-conveyorbelt",
     "version": "0.0.0-placeholder",
+    "dependencies": {
+      "@ax/system-timer": "^6.0.94"
+    },
     "devDependencies": {
       "@ax/sdk": "2311.0.1",
       "@simatic-ax/snippetscollection": "1.0.0",
@@ -48,6 +51,13 @@
       "version": "1.0.1",
       "integrity": "sha512-hMUWCPSAL1iFw+VraKwnk4PWy+3AQP5/LQiWZ6BCYMe9WcaNsF8+9wFx78ZtwUuAIXwvWsbNm2Ubqfj4u/QxyQ==",
       "resolved": "https://npm.pkg.github.com/download/@simatic-ax/plcopen-snippets/1.0.1/8b74c3c41001032750c555e85959e823f13658fb",
+      "dependencies": {}
+    },
+    "@ax/system-timer": {
+      "name": "@ax/system-timer",
+      "version": "6.0.94",
+      "integrity": "sha512-z2qQVgSKHt78DJZTgIxoAvZdviUzzZmIC3A5bXoWx3ak4fot7D9sa0bKmKp90kP5JqVnkEbl12zYtrBBEVKmNg==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/system-timer/-/system-timer-6.0.94.tgz",
       "dependencies": {}
     },
     "@ax/axunitst": {

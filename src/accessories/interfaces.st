@@ -1,4 +1,8 @@
 NAMESPACE Simatic.Ax.Mp
     
-
+    INTERFACE IConveyor
+        METHOD Run END_METHOD
+        METHOD Stop END_METHOD
+    END_INTERFACE
+    
 END_NAMESPACE

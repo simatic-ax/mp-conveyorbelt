@@ -55,14 +55,14 @@ NAMESPACE Simatic.Ax.Mp
       IF start AND NOT stop THEN
          // START machine
          feed.Run();
-         waitTimer(signal := TRUE, duration := waitTime);
+         //waitTimer(signal := TRUE, duration := waitTime);
          IF waitTimer.output THEN
             transport.Run();
          END_IF;
       ELSIF stop THEN            
          // STOP machine
          transport.Stop();
-         waitTimer(signal := TRUE, duration := waitTime);
+         //waitTimer(signal := TRUE, duration := waitTime);
          IF waitTimer.output THEN
             feed.Stop();
          END_IF;
@@ -70,10 +70,11 @@ NAMESPACE Simatic.Ax.Mp
          // Stop everything - invalid state
          feed.Stop();
          transport.Stop();
-         waitTimer(signal := FALSE); // Reset timer
+         //waitTimer(signal := FALSE); // Reset timer
       ELSE
          // Reset time-counter
-         waitTimer(signal := FALSE);
+         //waitTimer(signal := FALSE)
+         ;
       END_IF;
 
       // Copy values to outputs of blocks

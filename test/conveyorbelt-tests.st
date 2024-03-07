@@ -1,6 +1,6 @@
 USING AxUnit.Assert;
 
-NAMESPACE Simatic.Ax.Library.Mp
+NAMESPACE Simatic.Ax.Mp
     
     {TestFixture}
     CLASS Test_SensorInfeed

@@ -22,11 +22,10 @@ devDependencies:
   '@ax/sdk': 2311.0.1
   "@simatic-ax/snippetscollection": 1.0.0
   "@simatic-ax/plcopen-snippets": 1.0.1
-# Registry information, where the package will be published
 dependencies:
   "@ax/system-timer": 6.0.94
 
-
+# Registry information, where the package will be published
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
 # Files, which will be shipped with the library

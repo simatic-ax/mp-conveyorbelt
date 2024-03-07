@@ -1,16 +1,16 @@
 USING Simatic.Ax.Mp;
 
-NAMESPACE testConveyors
+NAMESPACE SimaticAxMp
 
     {TestFixture}
-    CLASS testBelt
+    CLASS Test_Belt
 
         VAR PROTECTED
             myBelt : Belt;
         END_VAR
 
         {Test}
-        METHOD PUBLIC test_initBelt
+        METHOD PUBLIC Test_InitBelt
             VAR_TEMP
                 beltDataInOut : types.beltData;
             END_VAR
@@ -26,8 +26,8 @@ NAMESPACE testConveyors
         {Test (inSpeed := 5000, outSpeed := 5000)}
         {Test (inSpeed := -100, outSpeed := 0)}
         {Test (inSpeed := 8500, outSpeed := 0)}
-        {Test (inSpeed := 3000, outSpeed := 3500)}
-        METHOD PUBLIC test_setSpeed
+        {Test (inSpeed := 3000, outSpeed := 3000)}
+        METHOD PUBLIC Test_SetSpeed
             VAR_INPUT
                 inSpeed : INT;
                 outSpeed : INT;

@@ -1,12 +1,12 @@
-USING AxUnit.Assert;
+USING Simatic.Ax.Mp;
 
-NAMESPACE Simatic.Ax.Mp
+NAMESPACE SimaticAxMp
     
     {TestFixture}
     CLASS Test_SensorInfeed
         {Test}
         METHOD PUBLIC Test_x
-            ; // AxUnit.Assert.Equal(expected := y, actual := x);
+            AxUnit.Assert.Equal(expected := 2, actual := 2);
         END_METHOD
         {Test}
         METHOD PUBLIC Test_y

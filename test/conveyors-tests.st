@@ -6,7 +6,7 @@ NAMESPACE SimaticAxMp
     CLASS Test_SensorInfeed
         {Test}
         METHOD PUBLIC Test_x
-            AxUnit.Assert.Equal(expected := 2, actual := 2);
+            ; // AxUnit.Assert.Equal(expected := y, actual := x);
         END_METHOD
         {Test}
         METHOD PUBLIC Test_y

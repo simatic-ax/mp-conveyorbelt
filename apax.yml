@@ -25,12 +25,14 @@ devDependencies:
 dependencies:
   "@ax/system-timer": 6.0.94
   "@simatic-ax/simple-control-modules": 5.0.1
+  "@simatic-ax/generators": 3.0.0
+  "@simatic-ax/dynamics": 1.1.0
 
 # Registry information, where the package will be published
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
-publicKeys:
-  "@simatic-ax": "3792a7e926775425ccdd29ceed8c368c3008b5b33d7d5550b3cb1f58093e1dff"
+# publicKeys:
+#   "@simatic-ax": "3792a7e926775425ccdd29ceed8c368c3008b5b33d7d5550b3cb1f58093e1dff"
 # Files, which will be shipped with the library
 files:
   - 'README.md'

@@ -8,7 +8,9 @@
     "version": "0.0.0-placeholder",
     "dependencies": {
       "@ax/system-timer": "6.0.94",
-      "@simatic-ax/simple-control-modules": "5.0.1"
+      "@simatic-ax/simple-control-modules": "5.0.1",
+      "@simatic-ax/generators": "3.0.0",
+      "@simatic-ax/dynamics": "^1.1.0"
     },
     "devDependencies": {
       "@ax/sdk": "2311.0.1",
@@ -69,6 +71,26 @@
       "dependencies": {
         "@ax/system-timer": "6.0.94",
         "@simatic-ax/io": "5.0.0"
+      }
+    },
+    "@simatic-ax/generators": {
+      "name": "@simatic-ax/generators",
+      "version": "3.0.0",
+      "integrity": "sha512-kwVwzvH1s4rXQuicl5T1u+rUzcUyIOYq8VdgR1v0CL/15vDr/uy5bFV4psBBKcEOB35XskkSO8WMOq7Aj3oPvg==",
+      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/generators/3.0.0/a69a139b54c1ed25eeac29f53d84f18665f12b75",
+      "dependencies": {
+        "@ax/system-timer": "6.0.94",
+        "@simatic-ax/io": "5.0.0"
+      }
+    },
+    "@simatic-ax/dynamics": {
+      "name": "@simatic-ax/dynamics",
+      "version": "1.1.0",
+      "integrity": "sha512-Naids2LP76vKD+wJfCMeqVi9aeLVXvkIiC2vliyKpwQ7NJRb8HH5TOcFQ+UF7OSBnviZVDCHpkUoVWJPltflog==",
+      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/dynamics/1.1.0/1f47811ca34659e3e93ad4a222c30500688f4d97",
+      "dependencies": {
+        "@ax/simatic-1500-clocks": "^6.0.37",
+        "@ax/system-math": "^6.0.94"
       }
     },
     "@ax/axunitst": {
@@ -228,6 +250,20 @@
       "dependencies": {
         "@ax/system-timer": "6.0.94"
       }
+    },
+    "@ax/simatic-1500-clocks": {
+      "name": "@ax/simatic-1500-clocks",
+      "version": "6.0.37",
+      "integrity": "sha512-s9f+7HH/NopPgeddgxhDdUrHFVEldgPSlAJWPr0igEWqR5d05uaWpEOzYFl2ap9CvxQ6D+WnZ582qev1haeJ2w==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/simatic-1500-clocks/-/simatic-1500-clocks-6.0.37.tgz",
+      "dependencies": {}
+    },
+    "@ax/system-math": {
+      "name": "@ax/system-math",
+      "version": "6.0.94",
+      "integrity": "sha512-lmkqZnJRT6zjAaVEKgWDwB1J7st+rgj/lfJc+6PZ/zgiRxoJ/s7BSTl/6YQ6k12RskKrA4E5VvLiqJhaNd3ssw==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/system-math/-/system-math-6.0.94.tgz",
+      "dependencies": {}
     },
     "@ax/axunitst-library": {
       "name": "@ax/axunitst-library",
@@ -711,13 +747,6 @@
       "cpu": [
         "x64"
       ],
-      "dependencies": {}
-    },
-    "@ax/system-math": {
-      "name": "@ax/system-math",
-      "version": "6.0.94",
-      "integrity": "sha512-lmkqZnJRT6zjAaVEKgWDwB1J7st+rgj/lfJc+6PZ/zgiRxoJ/s7BSTl/6YQ6k12RskKrA4E5VvLiqJhaNd3ssw==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/system-math/-/system-math-6.0.94.tgz",
       "dependencies": {}
     },
     "@ax/system-datetime": {

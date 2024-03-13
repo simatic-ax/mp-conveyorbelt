@@ -1,6 +1,6 @@
 # General information
 name: "@simatic-ax/mp-conveyorbelt"
-version: 0.0.0-placeholder
+version: 1.0.0
 author: Siemens AG
 # Description will be displayed in the apax extension
 description: This package contains all of the mp-specialized conveyor belt data
@@ -13,6 +13,8 @@ repository:
 variables:
   APAX_BUILD_ARGS:
     - '--debug'
+  APAX_TEST_ARGS:
+    - '-l=debug'
 targets:
   - '1500'
   - 'llvm'
@@ -27,7 +29,8 @@ dependencies:
   "@simatic-ax/simple-control-modules": 5.0.1
   "@simatic-ax/generators": 3.0.0
   "@simatic-ax/dynamics": 1.1.0
-
+  "@ax/simatic-1500-clocks": 6.0.37
+  "@ax/system-math": 6.0.94
 # Registry information, where the package will be published
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'

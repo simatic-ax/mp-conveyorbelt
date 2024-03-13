@@ -20,8 +20,8 @@ NAMESPACE Simatic.Ax.Process
         END_METHOD
 
         {Test}
-        METHOD PUBLIC Process_Finished_OnFallingEdgeOfMachineClock  // Change to falling edge
-            p.machineClock := fallingSignalMock;
+        METHOD PUBLIC Process_Finished_OnFallingEdgeOfMachineClock
+            p.machineClock := risingSignalMock;
             p.Start();
             AxUnit.Assert.Equal(actual := p.GetState(), expected := ProcessState#Fill);
             p.Execute();

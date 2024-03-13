@@ -19,8 +19,8 @@ NAMESPACE Simatic.Ax.Process
             p.TimeProvider := timeProvider;
         END_METHOD
 
-        {Test}
-        METHOD PUBLIC Process_Finished_OnFallingEdgeOfMachineClock
+        {Test} // This test checks the finished process on rising edge of the next clock signal
+        METHOD PUBLIC Process_Finished_OnRisingEdgeOfMachineClock
             p.machineClock := risingSignalMock;
             p.Start();
             AxUnit.Assert.Equal(actual := p.GetState(), expected := ProcessState#Fill);

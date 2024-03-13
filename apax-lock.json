@@ -6,18 +6,8 @@
   "root": {
     "name": "@simatic-ax/mp-conveyorbelt",
     "version": "1.0.0",
-    "dependencies": {
-      "@ax/system-timer": "6.0.94",
-      "@simatic-ax/simple-control-modules": "5.0.1",
-      "@simatic-ax/generators": "3.0.0",
-      "@simatic-ax/dynamics": "1.1.0",
-      "@ax/simatic-1500-clocks": "6.0.37",
-      "@ax/system-math": "6.0.94"
-    },
     "devDependencies": {
-      "@ax/sdk": "2311.0.1",
-      "@simatic-ax/snippetscollection": "1.0.0",
-      "@simatic-ax/plcopen-snippets": "1.0.1"
+      "@ax/sdk": "2311.0.1"
     }
   },
   "packages": {
@@ -43,71 +33,6 @@
         "@ax/plc-info": "2.3.0",
         "@ax/certificate-management": "1.1.0"
       }
-    },
-    "@simatic-ax/snippetscollection": {
-      "name": "@simatic-ax/snippetscollection",
-      "version": "1.0.0",
-      "integrity": "sha512-8BNldIIGZuuLSiMjJxcBmHt7sL7kSlc0dss88BcrfnL/7iXPmHwhlnh4XobcVoOHXaz5f8cbMbXCUrffBIwecQ==",
-      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/snippetscollection/1.0.0/60302d7e0da15a914ce0126503398063a42e1917",
-      "dependencies": {}
-    },
-    "@simatic-ax/plcopen-snippets": {
-      "name": "@simatic-ax/plcopen-snippets",
-      "version": "1.0.1",
-      "integrity": "sha512-hMUWCPSAL1iFw+VraKwnk4PWy+3AQP5/LQiWZ6BCYMe9WcaNsF8+9wFx78ZtwUuAIXwvWsbNm2Ubqfj4u/QxyQ==",
-      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/plcopen-snippets/1.0.1/8b74c3c41001032750c555e85959e823f13658fb",
-      "dependencies": {}
-    },
-    "@ax/system-timer": {
-      "name": "@ax/system-timer",
-      "version": "6.0.94",
-      "integrity": "sha512-z2qQVgSKHt78DJZTgIxoAvZdviUzzZmIC3A5bXoWx3ak4fot7D9sa0bKmKp90kP5JqVnkEbl12zYtrBBEVKmNg==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/system-timer/-/system-timer-6.0.94.tgz",
-      "dependencies": {}
-    },
-    "@simatic-ax/simple-control-modules": {
-      "name": "@simatic-ax/simple-control-modules",
-      "version": "5.0.1",
-      "integrity": "sha512-MRWJz3JbEG/ceT9NXIwsKlvb9E9ER+huvnFGQ2kZ5J39oDp0CQTWtFx51T/aWvAicSo+Bcmms4lyv1rXzpV5yg==",
-      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/simple-control-modules/5.0.1/cd1620f557f143019072b5369aa3fd4635894e26",
-      "dependencies": {
-        "@ax/system-timer": "6.0.94",
-        "@simatic-ax/io": "5.0.0"
-      }
-    },
-    "@simatic-ax/generators": {
-      "name": "@simatic-ax/generators",
-      "version": "3.0.0",
-      "integrity": "sha512-kwVwzvH1s4rXQuicl5T1u+rUzcUyIOYq8VdgR1v0CL/15vDr/uy5bFV4psBBKcEOB35XskkSO8WMOq7Aj3oPvg==",
-      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/generators/3.0.0/a69a139b54c1ed25eeac29f53d84f18665f12b75",
-      "dependencies": {
-        "@ax/system-timer": "6.0.94",
-        "@simatic-ax/io": "5.0.0"
-      }
-    },
-    "@simatic-ax/dynamics": {
-      "name": "@simatic-ax/dynamics",
-      "version": "1.1.0",
-      "integrity": "sha512-Naids2LP76vKD+wJfCMeqVi9aeLVXvkIiC2vliyKpwQ7NJRb8HH5TOcFQ+UF7OSBnviZVDCHpkUoVWJPltflog==",
-      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/dynamics/1.1.0/1f47811ca34659e3e93ad4a222c30500688f4d97",
-      "dependencies": {
-        "@ax/simatic-1500-clocks": "^6.0.37",
-        "@ax/system-math": "^6.0.94"
-      }
-    },
-    "@ax/simatic-1500-clocks": {
-      "name": "@ax/simatic-1500-clocks",
-      "version": "6.0.37",
-      "integrity": "sha512-s9f+7HH/NopPgeddgxhDdUrHFVEldgPSlAJWPr0igEWqR5d05uaWpEOzYFl2ap9CvxQ6D+WnZ582qev1haeJ2w==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/simatic-1500-clocks/-/simatic-1500-clocks-6.0.37.tgz",
-      "dependencies": {}
-    },
-    "@ax/system-math": {
-      "name": "@ax/system-math",
-      "version": "6.0.94",
-      "integrity": "sha512-lmkqZnJRT6zjAaVEKgWDwB1J7st+rgj/lfJc+6PZ/zgiRxoJ/s7BSTl/6YQ6k12RskKrA4E5VvLiqJhaNd3ssw==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/system-math/-/system-math-6.0.94.tgz",
-      "dependencies": {}
     },
     "@ax/axunitst": {
       "name": "@ax/axunitst",
@@ -256,15 +181,6 @@
       "dependencies": {
         "@ax/certificate-management-win-x64": "1.1.0",
         "@ax/certificate-management-linux-x64": "1.1.0"
-      }
-    },
-    "@simatic-ax/io": {
-      "name": "@simatic-ax/io",
-      "version": "5.0.0",
-      "integrity": "sha512-ViMOrL+CcDuPjr8Jb64xNDA3z/T5G+T9lwdmouNy0T2KGZN60G/tm6v1OvK/TtfjeFKrJ95YuvpypL3TlM81bw==",
-      "resolved": "https://npm.pkg.github.com/download/@simatic-ax/io/5.0.0/855930c4a6c89ef6a438f7add1b6f1e7936566a9",
-      "dependencies": {
-        "@ax/system-timer": "6.0.94"
       }
     },
     "@ax/axunitst-library": {
@@ -749,6 +665,13 @@
       "cpu": [
         "x64"
       ],
+      "dependencies": {}
+    },
+    "@ax/system-math": {
+      "name": "@ax/system-math",
+      "version": "6.0.94",
+      "integrity": "sha512-lmkqZnJRT6zjAaVEKgWDwB1J7st+rgj/lfJc+6PZ/zgiRxoJ/s7BSTl/6YQ6k12RskKrA4E5VvLiqJhaNd3ssw==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/system-math/-/system-math-6.0.94.tgz",
       "dependencies": {}
     },
     "@ax/system-datetime": {

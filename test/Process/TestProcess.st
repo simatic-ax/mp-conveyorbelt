@@ -10,7 +10,7 @@ NAMESPACE Simatic.Ax.Process
             p : ProcessHandler;
             pStateLess : ProcessHandler;
             risingSignalMock : BinSignalRisingEdgeMock;
-            fallingSignalMock : BinSignalRisingEdgeMock;
+            fallingSignalMock : BinSignalFallingEdgeMock;
         END_VAR
 
         {TestSetup}
@@ -20,8 +20,8 @@ NAMESPACE Simatic.Ax.Process
         END_METHOD
 
         {Test}
-        METHOD PUBLIC Process_Finished_OnRisingEdgeOfMachineClock
-            p.machineClock := risingSignalMock;
+        METHOD PUBLIC Process_Finished_OnFallingEdgeOfMachineClock  // Change to falling edge
+            p.machineClock := fallingSignalMock;
             p.Start();
             AxUnit.Assert.Equal(actual := p.GetState(), expected := ProcessState#Fill);
             p.Execute();

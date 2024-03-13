@@ -47,7 +47,7 @@ NAMESPACE Simatic.Ax.Process
         /// edge of the machine clock.
         METHOD PROTECTED ProcessFinished : BOOL
             
-            IF (machineClock.QFal() AND _processStarted) THEN
+            IF (machineClock.QRis() AND _processStarted) THEN
                 ProcessFinished := TRUE;
                 _processStarted := FALSE;
                 RETURN;

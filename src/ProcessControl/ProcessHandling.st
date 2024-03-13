@@ -1,3 +1,4 @@
+USING Simatic.Ax.IO.Input;
 USING Simatic.Ax.Generators;
 USING Simatic.Ax.Controller;
 
@@ -7,6 +8,7 @@ NAMESPACE Simatic.Ax.Process
         EXTENDS BaseProcess IMPLEMENTS IProcess
         VAR PUBLIC
             setpoint : LREAL;
+            machineClock : IBinSignal;
         END_VAR
         VAR PROTECTED
             _MachineClock : PulseGenerator := (PulseTime := T#400ms, PauseTime := T#1200ms);
@@ -18,22 +20,20 @@ NAMESPACE Simatic.Ax.Process
             _state : ProcessState;
         END_VAR
         /// Returns the setpoint for the process
-
         METHOD PUBLIC GetSetPoint : LREAL
             GetSetPoint := _actualSetpoint;
         END_METHOD
         /// Returns the actual value of the ppocess
-
         METHOD PUBLIC GetActualValue : LREAL
             GetActualValue := _actualValue;
         END_METHOD
 
+        /// Returns the current state of the process
         METHOD PUBLIC GetState : ProcessState
             GetState := _state;
         END_METHOD
 
         /// Returns the process clock
-
         METHOD PUBLIC GetClock : BOOL
             GetClock := _clock;
         END_METHOD
@@ -42,7 +42,9 @@ NAMESPACE Simatic.Ax.Process
             _processStarted := TRUE;
             _actualSetpoint := setpoint;
         END_METHOD
-        /// Returns true, when the process is finished
+        /// Returns true, when the procsess has been finished.
+        /// A started Process is finished, on the next rising 
+        /// edge of the machine clock.
         METHOD PUBLIC ProcessFinished : BOOL
             
             IF (_MachineClock.QRis() AND _processStarted) THEN
@@ -54,6 +56,10 @@ NAMESPACE Simatic.Ax.Process
         END_METHOD
 
         METHOD PUBLIC Execute
+            // If no external machine clock, use the internal? 
+            IF (machineClock = NULL) THEN
+                machineClock := _MachineClock;
+            END_IF;
             CASE _state OF
                 ProcessState#Fill:
                     THIS.Start();

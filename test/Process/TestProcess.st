@@ -22,8 +22,9 @@ NAMESPACE Simatic.Ax.Process
         METHOD PUBLIC Process_Finished_OnRisingEdgeOfMachineClock
             p.machineClock := signalMock;
             p.Start();
+            AxUnit.Assert.Equal(actual := p.GetState(), expected := ProcessState#Fill);
             p.Execute();
-            AxUnit.Assert.Equal(actual := p.ProcessFinished(), expected := TRUE);
+            AxUnit.Assert.Equal(actual := p.GetState(), expected := ProcessState#Unfill);
         END_METHOD
     END_CLASS
 

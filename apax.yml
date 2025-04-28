@@ -32,9 +32,7 @@ dependencies:
   # Registry information, where the package will be published
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
-# publicKeys:
-#   "@simatic-ax": "3792a7e926775425ccdd29ceed8c368c3008b5b33d7d5550b3cb1f58093e1dff"
-# Files, which will be shipped with the library
+
 files:
   - 'README.md'
   - 'LICENSE.md'

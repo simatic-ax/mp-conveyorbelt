@@ -30,7 +30,7 @@ catalogs:
 # Dependencies
 devDependencies:
   '@ax/sdk': ^2504.0.0
-  "@simatic-ax/snippetscollection": ^1.0.0
+  "@simatic-ax/snippetscollection": ^1.1.0
   "@simatic-ax/plcopen-snippets": ^1.0.1
 
 dependencies:
@@ -39,7 +39,7 @@ dependencies:
   "@simatic-ax/generators": ^8.0.0
   "@ax/simatic-1500-clocks": ^10.0.6
   "@ax/system-math": ^10.0.24
-  "@simatic-ax/dynamics": ^2.0.0  # TODO update to fit
+  "@simatic-ax/dynamics": ^3.0.0
 
 files:
   - 'README.md'

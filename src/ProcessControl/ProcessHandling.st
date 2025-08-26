@@ -8,7 +8,7 @@ NAMESPACE Simatic.Ax.Process
         EXTENDS BaseProcess IMPLEMENTS IProcess
         VAR PUBLIC
             setpoint : LREAL;
-            machineClock : IBinSignal;
+            machineClock : ItfBinSignal;
         END_VAR
         VAR PROTECTED
             _MachineClock : PulseGenerator := (PulseTime := T#400ms, PauseTime := T#1200ms);

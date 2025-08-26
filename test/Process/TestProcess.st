@@ -31,7 +31,7 @@ NAMESPACE Simatic.Ax.Process
 
     /// Mock the rising edge of the signal
     CLASS BinSignalRisingEdgeMock
-        IMPLEMENTS IBinSignal
+        IMPLEMENTS ItfBinSignal
         VAR
         END_VAR
 
@@ -54,7 +54,7 @@ NAMESPACE Simatic.Ax.Process
 
     /// Mock the falling edge of the signal
     CLASS BinSignalFallingEdgeMock
-        IMPLEMENTS IBinSignal
+        IMPLEMENTS ItfBinSignal
         VAR
         END_VAR
 

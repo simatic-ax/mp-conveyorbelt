@@ -19,16 +19,16 @@ targets:
 
 # Dependencies
 devDependencies:
-  '@ax/sdk': 2405.0.0
-  "@simatic-ax/snippetscollection": 1.0.0
+  '@ax/sdk': 2510.11.0
+  "@simatic-ax/snippetscollection": 1.1.0
   "@simatic-ax/plcopen-snippets": 1.0.1
 dependencies:
-  "@ax/system-timer": 7.0.17
-  "@simatic-ax/simple-control-modules": 6.0.0
-  "@simatic-ax/generators": 4.0.0
-  "@simatic-ax/dynamics": 2.0.0
-  "@ax/simatic-1500-clocks": 7.0.4
-  "@ax/system-math": 7.0.17
+  "@ax/system-timer": 10.4.16
+  "@simatic-ax/simple-control-modules": 9.0.1
+  "@simatic-ax/generators": 9.0.0
+  "@simatic-ax/dynamics": 4.1.0
+  "@ax/simatic-1500-clocks": 10.0.64
+  "@ax/system-math": 10.4.16
   # Registry information, where the package will be published
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
